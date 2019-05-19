@@ -4,7 +4,7 @@
 
 
 class Student(object):
-
+    # 两个下划线开头的变量是私有的
     def __init__(self, name, score):
         self.__name = name
         self.__score = score

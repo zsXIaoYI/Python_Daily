@@ -4,7 +4,6 @@
 
 
 # 类的另一种创建形式
-
 def bar(self, name):
     self._name = name
 
@@ -14,8 +13,8 @@ def foo(self, course_name):
 
 
 def main():
-    Student = type('Student', (object,), dict(__init__=bar, study=foo))
-    stu1 = Student('Amy')
+    student = type('Student', (object,), dict(__init__=bar, study=foo))
+    stu1 = student('Amy')
     stu1.study('Python程序设计')
 
 

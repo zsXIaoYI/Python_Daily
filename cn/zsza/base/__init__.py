@@ -6,7 +6,7 @@ import array
 
 symbols = 'ABD'
 codes = []
-
+# ord函数求字符的ascii
 for sym in symbols:
     codes.append(ord(sym))
 print(codes)
@@ -22,6 +22,8 @@ tshirts = [(color, size) for color in colors for size in sizes]
 print('tshirts:', tshirts)
 
 a = array.array('I', (1, 2, 3))  # I 表示大小为2个字节的无符号整数
+print('a:\n', a)
+
 for x in a:
     print(x)
 

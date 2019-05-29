@@ -22,4 +22,4 @@ print('t2:', t2)
 
 # tuple拆包
 name, age = ('小黑', 24)
-print(name, age)
+print('名字:{}, 年龄:{}'.format(name, age))

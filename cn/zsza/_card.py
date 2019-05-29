@@ -5,6 +5,10 @@
 
 import collections
 
+# 黑桃：Spades
+# 红桃：Heart
+# 方块：Diamond
+# 梅花：Club
 Card = collections.namedtuple('Card', ['rank', 'suit'])
 
 print('type of Card:', type(Card))

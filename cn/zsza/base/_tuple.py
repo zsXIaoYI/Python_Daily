@@ -20,4 +20,6 @@ t2[2][0] = 'X'
 t2[2][1] = 'Y'
 print('t2:', t2)
 
-
+# tuple拆包
+name, age = ('小黑', 24)
+print(name, age)

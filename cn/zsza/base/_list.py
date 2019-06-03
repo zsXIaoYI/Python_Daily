@@ -70,3 +70,15 @@ print(L4)
 g1 = (x * x for x in range(1, 5))
 print(isinstance(g1, tuple))
 print(g1)
+
+_L = [0, 1, 2, 3, 4, 5, 6, 7]
+print('_L的长度:', len(_L))
+print('_L[2:5]', _L[2:5])
+_L[2:5] = [20, 30, 40]
+print('after _L:', _L)
+
+bo = ['_'] * 3  # 返回['_', '_', '_']
+print(bo)
+
+board = [['_'] * 3 for i in range(3)]
+print('board:', board)

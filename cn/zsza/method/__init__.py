@@ -25,7 +25,18 @@ def factorial(n):
 l2 = list(map(factorial, range(6)))
 print(l2)
 
-
 print(factorial(5))
 print(factorial.__doc__)
 print(type(factorial))
+
+L = [2, 1, 4, 3]
+L1 = sorted(L)
+print('after sort L1:', L1)
+
+fruits = ['strawberry', 'fig', 'apple', 'pear']
+fruits.sort()
+print(fruits)
+
+_L = [('b', 2), ('a', 1), ('c', 3), ('d', 4)]
+_L.sort(key=lambda x: x[1])
+print(_L)

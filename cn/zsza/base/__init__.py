@@ -11,10 +11,19 @@ for sym in symbols:
     codes.append(ord(sym))
 print(codes)
 
+
 code2 = [ord(sym) for sym in symbols]
 print(code2)
 
+# 过滤
+code3 = [ord(sym) for sym in symbols if ord(sym) > 65]
+print('code3:\n', code3)
 
+code4 = list(filter(lambda c: c > 65, map(ord, symbols)))
+print('code4:\n', code4)
+
+
+# 笛卡尔积
 colors = ['black', 'white']
 sizes = ['S', 'M', 'L']
 
@@ -41,3 +50,5 @@ for cy, _ in country:
     print(cy)
 
 
+suits = 'spades diamonds clubs hearts'.split()
+print(suits)

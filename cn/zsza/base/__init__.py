@@ -30,6 +30,11 @@ sizes = ['S', 'M', 'L']
 tshirts = [(color, size) for color in colors for size in sizes]
 print('tshirts:', tshirts)
 
+# 用生成器表达式之后，内存里不会留下一个有6个组合的列表，因为生成器表达式会在
+# 每次for循环运行时才产生一个组合
+for t_shirt in ('%s %s' % (c, s) for c in colors for s in sizes):
+    print('t_shirt:', t_shirt)
+
 a = array.array('I', (1, 2, 3))  # I 表示大小为2个字节的无符号整数
 print('a:\n', a)
 

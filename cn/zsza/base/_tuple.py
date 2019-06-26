@@ -23,3 +23,10 @@ print('t2:', t2)
 # tuple拆包
 name, age = ('小黑', 24)
 print('名字:{}, 年龄:{}'.format(name, age))
+
+# divmod函数返回一个tuple,商几余几
+print(isinstance(divmod(7, 2), tuple))
+
+# * 运算符把一个可迭代对象拆开作为函数的参数
+t = (7, 2)
+print(divmod(*t))

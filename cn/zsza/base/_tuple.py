@@ -30,3 +30,8 @@ print(isinstance(divmod(7, 2), tuple))
 # * 运算符把一个可迭代对象拆开作为函数的参数
 t = (7, 2)
 print(divmod(*t))
+
+a = {'name': 'zs', 'age': 28}
+b = {'name': 'zs', 'age': 28}
+print('a于b的内容是否相等:', a == b)
+print('a is b or not:', a is b)  # 返回false

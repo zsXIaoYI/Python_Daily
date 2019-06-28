@@ -31,6 +31,8 @@ print(isinstance(divmod(7, 2), tuple))
 t = (7, 2)
 print(divmod(*t))
 
+
+# == 操作返回的是内容是否相等
 a = {'name': 'zs', 'age': 28}
 b = {'name': 'zs', 'age': 28}
 print('a于b的内容是否相等:', a == b)

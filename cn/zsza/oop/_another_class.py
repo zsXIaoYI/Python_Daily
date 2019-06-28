@@ -12,6 +12,7 @@ def foo(self, course_name):
     print('%s正在学习%s.' % (self._name, course_name))
 
 
+# 感觉和java的反射有点儿类似
 def main():
     student = type('Student', (object,), dict(__init__=bar, study=foo))
     stu1 = student('Amy')

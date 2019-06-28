@@ -10,7 +10,7 @@ class Student(object):
         self.age = age
 
     def study(self, course_name):
-        print('%s正在学习%s' % (self.name, course_name))
+        print('%s,正在学习%s' % (self.name, course_name))
 
     def is_adult(self):
         if self.age < 18:

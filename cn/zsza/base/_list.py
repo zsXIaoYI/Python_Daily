@@ -82,3 +82,23 @@ print(bo)
 
 board = [['_'] * 3 for i in range(3)]
 print('board:', board)
+
+_l1 = [3, [66, 55, 44], (7, 8, 9)]
+_l2 = list(_l1)
+_l1.append(100)  # _l1
+
+print('first _l1:', _l1)
+print('first _l2:', _l2)
+# 移除55对两者都有影响，两者中的第二个list元素都指向第一个
+_l1[1].remove(55)
+print('second _l1:', _l1)
+print('second _l2:', _l2)
+
+_l2[1] += [33, 22]
+print('third _l1:', _l1)
+print('third _l2:', _l2)
+
+# 下面操作生成了新的tuple对象，tuple的 += 操作会生成新的tuple
+_l2[2] += (10, 11)
+print('fourth _l1:', _l1)
+print('fourth _l2:', _l2)

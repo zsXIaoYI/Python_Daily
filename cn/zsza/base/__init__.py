@@ -25,8 +25,8 @@ print('code4:\n', code4)
 colors = ['black', 'white']
 sizes = ['S', 'M', 'L']
 
-tshirts = [(color, size) for color in colors for size in sizes]
-print('tshirts:', tshirts)
+t_shirts = [(color, size) for color in colors for size in sizes]
+print('t_shirts:', t_shirts)
 
 # 用生成器表达式之后，内存里不会留下一个有6个组合的列表，因为生成器表达式会在
 # 每次for循环运行时才产生一个组合

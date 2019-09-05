@@ -29,6 +29,10 @@ print(s1.isalnum())
 # 字符串是否只包含数字
 print(s1.isdecimal())
 
+s2 = 'Giraffe Academy'
+print('s2是否为全大写:', s2.isupper())
+
+
 # 复制到系统剪切板
 pyperclip.copy('something')
 

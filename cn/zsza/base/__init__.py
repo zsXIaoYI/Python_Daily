@@ -47,3 +47,14 @@ for cy, _ in country:
 
 suits = 'spades diamonds clubs hearts'.split()
 print(suits)
+
+
+def seq_search(items: list, elem) -> int:
+    """顺序查找"""
+    for index, item in enumerate(items):
+        if elem == item:
+            return index
+    return -1
+
+
+print(seq_search([1, 2, 3, 4], 3))

@@ -32,7 +32,6 @@ print(s1.isdecimal())
 s2 = 'Giraffe Academy'
 print('s2是否为全大写:', s2.isupper())
 
-
 # 复制到系统剪切板
 pyperclip.copy('something')
 
@@ -56,3 +55,12 @@ s3 = """asd
 df
 gh"""
 print(s3)
+
+# 求二进制数的十进制
+B = '1101'
+res = 0
+while B != '':
+    res = res * 2 + (ord(B[0]) - ord('0'))
+    B = B[1:]
+print(res)
+

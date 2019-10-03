@@ -50,3 +50,9 @@ def reverse_str2(s):
 
 print(reverse_str1('abc'))
 print(reverse_str2('abcd'))
+
+# 换行字符串
+s3 = """asd
+df
+gh"""
+print(s3)

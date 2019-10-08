@@ -41,6 +41,7 @@ def reverse_str1(s):
     return s[::-1]
 
 
+# 递归求字符串反转
 def reverse_str2(s):
     if len(s) <= 1:
         return s
@@ -63,4 +64,3 @@ while B != '':
     res = res * 2 + (ord(B[0]) - ord('0'))
     B = B[1:]
 print(res)
-

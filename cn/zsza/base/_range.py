@@ -24,3 +24,6 @@ print('after slice l4:', l4)
 # range支持序列拆包赋值
 x, y, z = range(3)
 print(x, y, z)
+
+
+print(list(range(1, 5)))

@@ -68,10 +68,16 @@ class xueSheng(object):
 
 
 xs = xueSheng()
+xs.set_score(89)
+print(xs.get_score())
 
 
 # xs.set_score(120)     # 120不在0~100之间,会报错
 class xueSheng2(object):
+
+    def __init__(self):
+        self._score = None
+
     @property
     def score(self):
         return self._score

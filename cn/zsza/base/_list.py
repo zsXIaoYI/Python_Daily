@@ -69,11 +69,19 @@ print('l4:', l4[:2])
 
 l4.reverse()
 print('l4逆序:', l4)
+
+print('----------------列表生成式--------------------------\n')
 # >>>>>>>>>>>>>>>>>>>>>>>>>列表生成式<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 L4 = [x * x for x in range(1,  6)]
 print('L4是否为list类型:', isinstance(L4, list))
 print(L4)
 
+L5 = [x + 1 for x in range(1, 6) if x % 2 == 1]
+print('L5:', L5)
+
+L6 = [m + n for m in 'ABC' for n in 'XY']
+print('L6:', L6)
 
 g1 = (x * x for x in range(1, 5))
 print('g1是否为tuple类型:', isinstance(g1, tuple))

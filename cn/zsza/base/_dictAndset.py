@@ -8,10 +8,12 @@
 # 正确使用dict非常重要,需要牢记的第一条就是dict的key必须是不可变对象
 # 在Python中，字符串、整数都是不可变的
 d = {'Jack': 18, 'Amy': 23}
+# 用如下方式得到key所对应的value，如果key不存在的话，则报KeyError
 print('Jack年龄:', d['Jack'])
 print('Amy年龄:', d.get('Amy'))
 print('d的长度:', len(d))
 
+# 如下类似于java中的Map的put操作
 d['May'] = 25
 print('新的dict:', d)
 print('May的年龄:', d['May'])
@@ -29,6 +31,7 @@ res = d.get('Jenny')
 print('Jenny是否存在:', res)
 print(res is None)
 
+# pop删除dict中的一个键值对，并返回value
 v = d.pop('Jack')
 print('pop的值:', v)
 print('after pop:', d)
@@ -37,6 +40,16 @@ d1 = {'city': '北京', 'area': 200}
 print(d1.get('city'))
 print(d1.get('area'))
 
+print('**************dict迭代*************')
+# 迭代key
+for key in d1.keys():
+    print('key:', key)
+# 迭代键值对
+for key, value in d1.items():
+    print('{} : {}'.format(key, value))
+
+for item in d1.items():
+    print(item)
 # >>>>>>>>>>>>>>>>>> set <<<<<<<<<<<<<<<<<<<
 # set集合元素不能重复,要创建一个set，需要提供一个list作为输入集合
 # 1、可以用add()方法添加元素

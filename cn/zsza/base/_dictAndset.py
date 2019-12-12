@@ -48,6 +48,7 @@ for key in d1.keys():
 for key, value in d1.items():
     print('{} : {}'.format(key, value))
 
+# item是tuple类型
 for item in d1.items():
     print(item)
 # >>>>>>>>>>>>>>>>>> set <<<<<<<<<<<<<<<<<<<

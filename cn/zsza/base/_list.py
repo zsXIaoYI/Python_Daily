@@ -36,10 +36,11 @@ p1 = stu.pop(1)
 print('删除位置1上的元素:', p1)
 print(stu)
 
+print('************************\n')
 
 stu_1 = ['Amy', 'Jack', 'Bob']
 stu_1[0] = 'Star'    # 可以替换指定位置上的元素
-print('stu_1:', stu_1)
+print('替换后的stu_1:', stu_1)
 
 # list中的元素类型可以不同
 L1 = ['Apple', 123, True]
@@ -53,18 +54,21 @@ print('L2的长度:', len(L2))  # L2的长度为3
 empty_L = []   # 声明一个空的list,其长度为0
 
 
-# list高级特性
+# list高级特性:切片
+# list[start:end:step],步长默认为1
 # list可以进修切片,如果第一个索引为0,还可以省略
 L3 = ['Amy', 'Jack', 'Jenny']
 print('取L3的前两个元素:', L3[0:2])
 print(L3[:2])
 
-print(L3[-2:])
+print('L3最后两个元素', L3[-2:])
 
 l4 = [1, 2, 3, 4, 5, 6]
 print('l4中,从零开始,每隔两个取一个元素:', l4[::2])
 print('l4:', l4[:2])
 
+l4.reverse()
+print('l4逆序:', l4)
 # >>>>>>>>>>>>>>>>>>>>>>>>>列表生成式<<<<<<<<<<<<<<<<<<<<<<<<<<
 L4 = [x * x for x in range(1,  6)]
 print('L4是否为list类型:', isinstance(L4, list))
@@ -72,13 +76,14 @@ print(L4)
 
 
 g1 = (x * x for x in range(1, 5))
-print(isinstance(g1, tuple))
+print('g1是否为tuple类型:', isinstance(g1, tuple))
 print(g1)
 
+print('------------------------------------\n')
 _L = [0, 1, 2, 3, 4, 5, 6, 7]
 print('_L的长度:', len(_L))
 print('_L[2:5]', _L[2:5])
-_L[2:5] = [20, 30, 40]
+_L[2:5] = [20, 30, 40]   # 切片的赋值会影响原来list元素
 print('after _L:', _L)
 
 bo = ['_'] * 3  # 返回['_', '_', '_']
@@ -106,3 +111,6 @@ print('third _l2:', _l2)
 _l2[2] += (10, 11)
 print('fourth _l1:', _l1)
 print('fourth _l2:', _l2)
+
+# 字符串转换为List
+print(list('abc'))

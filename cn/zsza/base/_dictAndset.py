@@ -71,6 +71,10 @@ s2 = set([2, 3, 4])
 print('s1于s2的交集:', s1 & s2)
 print('s1与s2的并集:', s1 | s2)
 
+# list作为一个参数传入update方法，合并成一个新的set
+s1.update([3, 5])
+print('after update:', s1)
+
 # Python中dict的key不支持list或dict类型，因为list和dict类型是unhashable的
 # 因为Python的list和dict都是可变对象，可以动态地添加或删除元素,以下两行代码会报unhashable typpe: 'list'
 # _s2 = set([(1, 2, [1, 2]), (2, 3, [6, 8])])

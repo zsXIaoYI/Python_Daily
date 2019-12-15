@@ -24,10 +24,6 @@ print(_method.quadratic(1, -5, 6))
 
 print(_method.power(3, 4))
 
-# 调用_method.power(5) 会报错
-# TypeError: power() missing 1 required positional argument: 'n'
-# print(_method.power(5))
-
 # power(x, n)中默认声明n为2，则下面power(5)调用,实则调的是power(5, 2)
 print(_method.power(5))
 
@@ -40,17 +36,17 @@ _method.enroll('yy', 'female', city='tianjin')
 print(_method.add_end())
 print(_method.add_end())  # 返回['end', 'end']
 
-print(_method._add_end())
-print(_method._add_end())
+print(_method.add_end_2())
+print(_method.add_end_2())
 
 print('1, 3, 5的平方和为:', _method.calc([1, 3, 5]))
 
 # 传入的1, 2, 3为可变参数
-print('1, 2, 3的平方和为:', _method._calc(1, 2, 3))
+print('1, 2, 3的平方和为:', _method.calc_2(1, 2, 3))
 
 # *nums表示把nums这个list的所有元素作为可变参数传进去
 nums = [1, 2, 3]
-print('list转换成可变参数求元素的平方和:', _method._calc(*nums))
+print('list转换成可变参数求元素的平方和:', _method.calc_2(*nums))
 
 _method.print_per('xiaoan', 18, city='beijing')
 _method.print_per('xiaoan', 19, gender='male', city='beijing')

@@ -5,16 +5,19 @@
 import math
 
 
+# 定义一个空函数
+def nop():
+    pass
+
+
+# 求一个整数的绝对值
 def my_abs(x):
+    if not isinstance(x, int):
+        raise TypeError('不是整数')
     if x >= 0:
         return x
     else:
         return -x
-
-
-# 定义一个空函数
-def nop():
-    pass
 
 
 def my_abs_(x):
@@ -26,7 +29,7 @@ def my_abs_(x):
         return -x
 
 
-# Python函数返回多个值
+# Python函数返回多个值，angle为默认参数
 def move(x, y, step, angle=0):
     nx = x + step * math.cos(angle)
     ny = y + step * math.sin(angle)
@@ -66,6 +69,7 @@ def power(x, n=2):
     return s
 
 
+# city默认为Beijing
 def enroll(name, gender, city='Beijing'):
     print('name:', name)
     print('gender:', gender)
@@ -79,7 +83,7 @@ def add_end(L=[]):
 
 
 # L指向一个不可变对象None
-def _add_end(L=None):
+def add_end_2(L=None):
     if L is None:
         L = []
     L.append('end')
@@ -97,9 +101,9 @@ def calc(numbers):
 
 # 带有可变参数的函数
 # *numbers为可变参数,number是个tuple类型
-def _calc(*numbers):
+def calc_2(*numbers):
     print('*numbers:', *numbers)
-    print('*numbers的类型:', isinstance(numbers, tuple))
+    print('*numbers是否为tuple类型:', isinstance(numbers, tuple))
     add = 0
     for n in numbers:
         add = add + n * n

@@ -22,7 +22,7 @@ def factorial(n):
     return 1 if n < 2 else n * factorial(n - 1)
 
 
-l2 = list(map(factorial, range(6)))
+l2 = list(map(factorial, range(1, 6)))
 print(l2)
 
 print(factorial(5))

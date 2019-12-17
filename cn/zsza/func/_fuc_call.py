@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 # __author__ = 'zs'
 # 2018/12/17 下午7:29
+
+
 from functools import reduce
 from typing import Iterable, Iterator
-
 import Func_1
 
 a = Func_1.add(1, 3, abs)

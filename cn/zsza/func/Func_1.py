@@ -3,6 +3,7 @@
 # 2018/12/17 下午7:24
 from functools import reduce
 
+# abs: 求绝对值的函数
 a = abs(-1)
 print('a:', a)
 
@@ -11,7 +12,7 @@ f = abs
 print(f(-8))
 
 
-# 一个最简单的高阶级函数
+# 一个最简单的高阶级函数,参数f是一个函数
 def add(x, y, f):
     return f(x) + f(y)
 

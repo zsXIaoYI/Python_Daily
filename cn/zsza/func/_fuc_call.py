@@ -7,7 +7,16 @@ from functools import reduce
 from typing import Iterable, Iterator
 import Func_1
 
-a = Func_1.add(1, 3, abs)
+# abs: 求绝对值的函数
+a = abs(-1)
+print('a:', a)
+
+# abs函数直接赋值给f
+f = abs
+print('-8的绝对值:', f(-8))
+
+# add方法传入一个函数作为参数
+a = Func_1.add(1, 3, f)
 print('a:', a)
 
 # >>>>>>>>>>>>>>>>>>>>map/reduce<<<<<<<<<<<<<<<<<<<<

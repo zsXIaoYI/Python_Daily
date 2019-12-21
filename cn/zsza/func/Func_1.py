@@ -3,14 +3,6 @@
 # 2018/12/17 下午7:24
 from functools import reduce
 
-# abs: 求绝对值的函数
-a = abs(-1)
-print('a:', a)
-
-# abs函数直接赋值给f
-f = abs
-print(f(-8))
-
 
 # 一个最简单的高阶级函数,参数f是一个函数
 def add(x, y, f):
@@ -60,5 +52,3 @@ def _FirstCharToUpperCase(s):
         return s.upper()
     else:
         return s[0:1].upper() + s[1:l]
-
-

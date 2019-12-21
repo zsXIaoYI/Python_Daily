@@ -21,9 +21,9 @@ print('a:', a)
 
 # >>>>>>>>>>>>>>>>>>>>map/reduce<<<<<<<<<<<<<<<<<<<<
 
-# m返回一个map对象
+# m返回一个map对象，不是java中的map
 m = map(Func_1.f1, [1, 2, 3])
-print(m)
+print('m:', m)
 print(isinstance(m, Iterable))  # m支持迭代
 print('m转换成list:', list(m))
 

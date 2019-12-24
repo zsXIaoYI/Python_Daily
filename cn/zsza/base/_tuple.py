@@ -37,3 +37,7 @@ a = {'name': 'zs', 'age': 28}
 b = {'name': 'zs', 'age': 28}
 print('a于b的内容是否相等:', a == b)
 print('a is b or not:', a is b)  # 返回false
+
+t1 = (1, 2, [20, 30])
+# tuple取最后一个元素
+print(t1[-1])

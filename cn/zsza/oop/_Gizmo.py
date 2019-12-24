@@ -4,13 +4,12 @@
 
 
 class Gizmo(object):
-
-    def __int__(self):
+    # 注意init的拼写
+    def __init__(self):
         print('Gizmo id: %d' % id(self))
 
 
 x = Gizmo()
 print(x)
 
-t1 = (1, 2, [20, 30])
-print(t1[-1])
+

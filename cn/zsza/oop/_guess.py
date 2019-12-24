@@ -8,6 +8,11 @@ from random import randint
 
 class GuessMachine(object):
 
+    """
+    _answer: 猜的数字
+    _counter: 猜的次数
+    _hint: 猜中提示语
+    """
     def __init__(self):
         self._answer = None
         self._counter = None

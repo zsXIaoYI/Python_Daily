@@ -8,8 +8,9 @@ import sys
 file_name = '1.txt'
 
 # 读取1.txt文件
+# 在with代码块内，open函数打开文件返回的文件对象通过as重命名为f，通过文件对象f操作文件，操作完文件程序自动关闭文件
 try:
-    with open(file_name) as f:
+    with open(file_name, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 except FileNotFoundError as msg:
     print('无法打开文件, error is {} ', msg)
@@ -22,6 +23,7 @@ else:
         print(res, 'len:', len(res))
         time.sleep(0.5)
 finally:
+    # f.close()
     print('end it!')
 
 

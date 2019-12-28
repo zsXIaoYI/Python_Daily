@@ -13,14 +13,14 @@ def main():
 
     print('.........')
     # 逐行读取文件
-    with open('1.txt', mode='r') as f:
+    with open('1.txt',  encoding='utf-8') as f:
         for line in f:
             print(line, end='')
             time.sleep(0.5)
     print('\n***********')
 
     # 读取到一个list中
-    with open('1.txt') as f:
+    with open('1.txt', encoding='utf-8') as f:
         lines = f.readlines()
         print('lines:', lines)
 

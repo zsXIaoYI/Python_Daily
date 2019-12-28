@@ -7,7 +7,8 @@ from math import sqrt
 print(sqrt(2))  # 开方
 
 # a为追加
-with open('prime.txt', 'a') as f:
+with open('prime.txt', 'a', encoding='utf-8') as f:
+    f.write('美利坚合众国\n')
     for num in range(2, 10):
         f.write(str(num) + '\n')
 print('写入完成')

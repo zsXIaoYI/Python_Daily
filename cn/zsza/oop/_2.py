@@ -45,3 +45,5 @@ print(b)
 a.mul(3)
 print('after mul operate, a:', a)
 
+# 返回: ['__module__', '__init__', '__add__', '__str__', 'mul', '__doc__']
+print(list(ThirdClass.__dict__.keys()))

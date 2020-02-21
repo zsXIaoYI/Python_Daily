@@ -51,3 +51,13 @@ stp = StepperIndex()
 stp.data = 'Spam'
 for item in stp:
     print(item, end=' ')
+
+list1 = [c for c in stp]
+print('\nlist1:', list1)
+
+_list1 = [c for c in stp]
+print('_list1:', _list1)
+
+
+list2 = list(map(str.upper, stp))
+print('list2:', list2)

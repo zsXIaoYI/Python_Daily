@@ -28,3 +28,14 @@ print('\n*****************')
 
 Sq = iter(X)
 print(next(Sq))
+
+Y = Squares(1, 3)
+for i in Y:
+    print(i, end=' ')
+
+# 再次迭代，list1返回一个空list，只是一个一次性迭代
+list1 = [i for i in Y]
+print('\nlist1:', list1)
+
+
+
